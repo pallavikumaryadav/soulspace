@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>How are you feeling today? 🤍</h2>
+
+  <div class="mood-grid">
+    <div 
+      class="mood-card"
+      *ngFor="let mood of moods"
+      (click)="openVideo(mood.link)"
+    >
+      {{ mood.name }}
+    </div>
+  </div>
+</div>
